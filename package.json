@@ -6,7 +6,6 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
-    "node-emoji": "^1.11.0",
     "randomcolor": "^0.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -44,6 +43,7 @@
     "@types/randomcolor": "^0.5.6",
     "@types/react": "18.0.18",
     "@types/react-dom": "18.0.6",
+    "@types/testing-library__jest-dom": "^5.14.5",
     "@typescript-eslint/eslint-plugin": "5.36.2",
     "@typescript-eslint/parser": "5.36.2",
     "@upleveled/eslint-config-upleveled": "2.12.7",
@@ -73,5 +73,9 @@
     "eslint-plugin-react": "7.31.8",
     "eslint-plugin-react-hooks": "4.6.0",
     "@typescript-eslint/utils": "5.36.2"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/tonijaa007/react-random-color-generator.git",
+  "author": "Osman Rahimi <tonijaa007@hotmail.com>",
+  "license": "MIT"
 }
