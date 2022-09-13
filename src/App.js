@@ -4,8 +4,7 @@ import { useState } from 'react';
 
 function App() {
   const [color, setColor] = useState(randomColor());
-  const [chosenColor, setChosenColor] = useState('');
-
+  const newColor = randomColor();
   return (
     <div>
       <h1
@@ -28,7 +27,7 @@ function App() {
           fontSize: 20,
           border: '1px black solid',
           borderRadius: 15,
-          backgroundColor: 'white',
+          backgroundColor: color,
         }}
       >
         Generated: {color}
@@ -38,16 +37,7 @@ function App() {
       <br />
       <button
         onClick={() => {
-          const newColor = randomColor();
           setColor(newColor);
-        }}
-        onChange={(event) => {
-          setColor(event.currentTarget.value);
-
-          const generatedColor = randomColor(event.currentTarget.value);
-          if (chosenColor) {
-            setChosenColor(generatedColor);
-          }
         }}
       >
         Generate
